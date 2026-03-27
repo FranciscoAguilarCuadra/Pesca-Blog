@@ -1,5 +1,5 @@
 
-export function PostCard({ title, content, image, onDelete }) {
+export function PostCard({ title, content, image, onDelete, onEdit }) {
   
   return (
     <article>
@@ -8,6 +8,7 @@ export function PostCard({ title, content, image, onDelete }) {
       <p>{content}</p>
 
       <button onClick={onDelete}>Eliminar</button>
+      <button onClick={onEdit}>Editar</button>
     </article>
   )
 }
