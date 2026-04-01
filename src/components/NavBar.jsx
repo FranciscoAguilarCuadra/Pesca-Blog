@@ -1,15 +1,11 @@
+import { Link } from 'react-router-dom'
 
-function NavBar(){
-    return <>
-    
-        <nav className="navBar">
-            <a href="">Inicio</a>
-            <a href="">Login</a>
-            <a href="">Quiénes Somos</a>
-        </nav>
-    </>
-    
+export function NavBar() {
+  return (
+    <nav className="navBar">
+      <Link to="/">Inicio</Link>
+      <Link to="/login">Login</Link>
+      <Link to="/quienes-somos">Quiénes Somos</Link>
+    </nav>
+  )
 }
-
-
-export default NavBar
