@@ -1,0 +1,97 @@
+
+/* ============================================================
+   MODAL
+   ============================================================ */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(31, 41, 55, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  padding: 1rem;
+}
+
+.modal {
+  background: var(--color-surface);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid var(--color-border);
+}
+
+.modal h2 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  margin-bottom: 1.3rem;
+  color: var(--color-dark);
+}
+
+.modal-input {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid #d1dbd4;
+  border-radius: var(--radius-sm);
+  background: var(--color-input-bg);
+  color: var(--color-text);
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  transition: border-color var(--transition);
+}
+
+.modal-input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.modal-input::placeholder {
+  color: var(--color-text-faint);
+}
+
+textarea.modal-input {
+  resize: vertical;
+  min-height: 110px;
+  line-height: 1.5;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.4rem;
+}
+
+.btn-save {
+  flex: 1;
+  padding: 0.65rem;
+  background-color: var(--color-dark);
+  color: var(--color-bg);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.btn-save:hover {
+  background-color: var(--color-dark-hover);
+}
+
+.btn-cancel {
+  flex: 1;
+  padding: 0.65rem;
+  background-color: var(--color-surface);
+  color: var(--color-danger);
+  border: 1px solid var(--color-danger-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.btn-cancel:hover {
+  background-color: #fdecea;
+}

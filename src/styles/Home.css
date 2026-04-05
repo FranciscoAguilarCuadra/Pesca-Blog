@@ -1,0 +1,94 @@
+/* ============================================================
+   BOTÓN PRINCIPAL (Nuevo post, etc.)
+   ============================================================ */
+.btn-primary {
+  background-color: var(--color-dark);
+  color: var(--color-bg);
+  border: none;
+  padding: 0.6rem 1.3rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-dark-hover);
+}
+
+
+
+/* ============================================================
+   HERO / ENCABEZADO HOME
+   ============================================================ */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  color: var(--color-dark);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.hero p {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.hero-divider {
+  width: 48px;
+  height: 3px;
+  background-color: var(--color-accent);
+  border-radius: 2px;
+  margin: 1rem auto;
+}
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+main.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5.5rem 1.5rem 2rem;
+}
+
+/* ============================================================
+   ESTADO VACÍO
+   ============================================================ */
+.empty-state {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: var(--color-text-muted);
+}
+
+.empty-state p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 640px) {
+  .hero {
+    padding: 2rem 1rem 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  main.container {
+    padding: 5.5rem 1rem 2rem;
+  }
+
+  .btn-primary {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
