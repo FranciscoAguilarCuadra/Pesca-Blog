@@ -11,21 +11,22 @@ function Login() {
   const navigate = useNavigate()
 
   const handleLogin = async (e) => {
-    e.preventDefault()
-    setError('')
-    setLoading(true)
+  e.preventDefault()
+  setError('')
+  setLoading(true)
 
-    try {
-      const data = await loginUser({ email, password })
-
-      localStorage.setItem('token', data.token)
-      navigate('/')
-    } catch (error) {
-      setError(error.message || 'Correo o contraseña incorrectos.')
-    } finally {
-      setLoading(false)
-    }
+  try {
+    const data = await loginUser({ email, password })
+    console.log('Respuesta del backend:', data)  // ← agrega esto
+    localStorage.setItem('token', data.token)
+    navigate('/')
+  } catch (error) {
+    console.log('Error capturado:', error.message)  // ← y esto
+    setError(error.message || 'Correo o contraseña incorrectos.')
+  } finally {
+    setLoading(false)
   }
+}
 
   return (
     <div className="login-page">
