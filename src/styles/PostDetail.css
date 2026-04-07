@@ -36,6 +36,13 @@
     box-shadow: var(--shadow-card);
 }
 
+@media (max-width: 640px) {
+  .post-detail__image {
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+  }
+}
 /* ─── CONTENIDO ─── */
 .post-detail__content {
     font-size: 1.05rem;
